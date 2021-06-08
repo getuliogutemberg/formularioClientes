@@ -1,0 +1,76 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to left, rgb(134, 134, 134), cyan);
+  height: 100vh;
+}
+
+.box{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+fieldset{
+  padding: 5px;
+  border-color: rgb(85, 85, 153);
+  border-radius: 5px;
+}
+
+legend{
+  border: 1px solid rgb(85, 85, 153);
+  font-size: 20px;
+  border-radius: 3px;
+  background-color: rgb(85, 85, 153);
+}
+
+.inputbox{
+  position: absolute;
+}
+
+.inputUser{
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+  height: 20px;
+}
+
+.labelInput{
+  position: absolute;
+  left: 25px;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.inputUser:focus ~ .labelInput{
+  font-size: 10px;
+  color:rgb(251, 255, 40);
+  left: 280px; 
+}
+
+.inputUser:valid ~ .labelInput{
+  font-size: 10px;
+  color:rgb(72, 255, 0);
+  left: 250px;
+}
+
+.inputUser:invalid{
+  font-size: 10px;
+  color:rgb(245, 27, 27);
+  left: 250px;
+}
