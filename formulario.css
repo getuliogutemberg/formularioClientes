@@ -54,13 +54,7 @@ legend{
   position: absolute;
   left: 25px;
   pointer-events: none;
-  transition: .5s;
-}
-
-.inputUser:focus ~ .labelInput{
-  font-size: 10px;
-  color:rgb(251, 255, 40);
-  left: 280px; 
+  transition: 1s;
 }
 
 .inputUser:valid ~ .labelInput{
@@ -69,27 +63,27 @@ legend{
   left: 250px;
 }
 
-.inputUser:invalid{
+.inputUser:invalid ~ .labelInput{
   font-size: 10px;
-  color:rgb(245, 27, 27);
+  color:rgb(255, 2, 2);
   left: 250px;
 }
 
 .created{
-  color: whitesmoke;
+  color: rgb(59, 59, 59);
   position: absolute;
   top: 90%;
-  left: 50%;
+  left: 90%;
   transform: translate(-50%);
   font-family: monospace;
   margin-top: 10px;
 }
 a:link{
-  color: rgb(255, 255, 255);
+  color: rgb(59, 59, 59);
   text-decoration: none;
 }
 a:visited{
-  color: rgb(255, 255, 255);
+  color: rgb(59, 59, 59);
   text-decoration: none;
 }
 
