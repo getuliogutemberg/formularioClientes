@@ -82,6 +82,7 @@ legend{
   left: 50%;
   transform: translate(-50%);
   font-family: monospace;
+  margin-top: 10px;
 }
 a:link{
   color: rgb(255, 255, 255);
@@ -90,4 +91,17 @@ a:link{
 a:visited{
   color: rgb(255, 255, 255);
   text-decoration: none;
+}
+
+#submit{
+  background-color: dodgerblue;
+  border-radius: 15px;
+  height: 30px;
+  width: 100%;
+  color: white;
+  align-items: center;
+}
+
+#submit:hover{
+  background-color: rgb(124, 189, 255);
 }
