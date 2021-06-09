@@ -57,17 +57,24 @@ legend{
   transition: 1s;
 }
 
+.inputUser:focus ~ .labelInput,
 .inputUser:valid ~ .labelInput{
+  left: 250px;
+  color:chartreuse;
+}
+
+/* .inputUser:valid ~ .labelInput{
   font-size: 10px;
   color:rgb(72, 255, 0);
   left: 250px;
+  top: -20px;
 }
 
 .inputUser:invalid ~ .labelInput{
   font-size: 10px;
   color:rgb(255, 2, 2);
   left: 250px;
-}
+} */
 
 .created{
   color: rgb(59, 59, 59);
